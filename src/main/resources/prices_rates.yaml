@@ -1,0 +1,74 @@
+openapi: 3.0.3
+info:
+  title: Prices and Rates
+  description: |-
+    Example of REST query to get rates and prices between two timestamps.
+  version: 1.0.11
+servers:
+  - url: https://testenvironment.org/api/v1
+tags:
+  - name: rates
+    description: Everything about rates and prices
+paths:
+  /rates:
+    get:
+      tags:
+        - rates
+      summary: Finds rates and prices between two dates
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findRates
+      parameters:
+        - name: date
+          in: query
+          description: Effective date
+          required: true
+          schema:
+            type: string
+        - name: product_id
+          in: query
+          description: Product identifier
+          required: true
+          schema:
+            type: string
+        - name: brand
+          in: query
+          description: Brand
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rate'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Rate'
+        '400':
+          description: Invalid status value
+
+components:
+  schemas:
+    Rate:
+      type: object
+      properties:
+        product_id:
+          type: integer
+          format: int64
+        brand:
+          type: string
+        rate:
+          type: integer
+          format: int32
+        start_date:
+          type: string
+          format: timestamp
+        end_date:
+          type: string
+          format: timestamp
+        price:
+          type: number
+          format: double
+
