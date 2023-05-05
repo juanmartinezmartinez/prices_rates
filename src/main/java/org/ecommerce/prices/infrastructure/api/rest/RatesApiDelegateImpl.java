@@ -1,8 +1,8 @@
-package org.ecommerce.prices.application;
+package org.ecommerce.prices.infrastructure.api.rest;
 
-import org.ecommerce.prices.application.request.Rate;
 import org.ecommerce.prices.domain.service.BrandService;
 import org.ecommerce.prices.domain.service.PriceService;
+import org.ecommerce.prices.infrastructure.api.rest.request.Rate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;

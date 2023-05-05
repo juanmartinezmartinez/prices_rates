@@ -19,13 +19,13 @@ public class PriceRepository implements org.ecommerce.prices.domain.repository.P
 
     @Override
     public List<Prices> findByProductAndBrandAndDate(Integer product, Integer brand, Date date) {
-        List<org.ecommerce.prices.infrastructure.model.Prices> prices
+        List<org.ecommerce.prices.infrastructure.repository.h2.model.Prices> prices
                 = h2PriceRepository.findByProductIdAndBrandIdAndStartDateBeforeAndEndDateAfter(product, brand, date, date);
 
         return prices.stream().map(price -> buildPrice(price)).toList();
     }
 
-    private Prices buildPrice(org.ecommerce.prices.infrastructure.model.Prices price) {
+    private Prices buildPrice(org.ecommerce.prices.infrastructure.repository.h2.model.Prices price) {
         return Prices.builder()
                 .priceList(price.getPriceList())
                 .id(price.getId())

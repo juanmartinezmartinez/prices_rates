@@ -1,4 +1,4 @@
-package org.ecommerce.prices.infrastructure.model;
+package org.ecommerce.prices.infrastructure.repository.h2.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

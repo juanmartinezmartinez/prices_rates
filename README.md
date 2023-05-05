@@ -80,7 +80,7 @@ La base de datos se inicializa con la información proporcionada en el fichero *
 
 ## Uso
 
-Se han creado unos tests e2e para la comprobación del correcto funcionamiento del endpoint siguiendo los
+Se han creado unos tests e2e con Postman para la comprobación del correcto funcionamiento del endpoint siguiendo los
 siguientes casos de prueba:
 
           Test 1: petición a las 10:00 del día 14 del producto 35455   para la brand 1 (ZARA)

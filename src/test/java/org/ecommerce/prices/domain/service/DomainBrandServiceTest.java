@@ -1,5 +1,6 @@
 package org.ecommerce.prices.domain.service;
 
+import org.ecommerce.prices.application.DomainBrandService;
 import org.ecommerce.prices.domain.Brands;
 import org.ecommerce.prices.domain.repository.BrandsRepository;
 import org.junit.jupiter.api.BeforeEach;

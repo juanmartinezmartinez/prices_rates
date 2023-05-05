@@ -1,6 +1,6 @@
 package org.ecommerce.prices.infrastructure.repository.h2;
 
-import org.ecommerce.prices.infrastructure.model.Prices;
+import org.ecommerce.prices.infrastructure.repository.h2.model.Prices;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -19,11 +19,11 @@ public class BrandsRepository implements org.ecommerce.prices.domain.repository.
 
     @Override
     public Stream<Brands> findAll() {
-        Iterable<org.ecommerce.prices.infrastructure.model.Brands> brands = h2BrandsRepository.findAll();
+        Iterable<org.ecommerce.prices.infrastructure.repository.h2.model.Brands> brands = h2BrandsRepository.findAll();
         return StreamSupport.stream(brands.spliterator(), false).map(brand -> buildBrand(brand));
     }
 
-    private Brands buildBrand(org.ecommerce.prices.infrastructure.model.Brands brand) {
+    private Brands buildBrand(org.ecommerce.prices.infrastructure.repository.h2.model.Brands brand) {
         return Brands.builder()
                 .id(brand.getId())
                 .name(brand.getName())

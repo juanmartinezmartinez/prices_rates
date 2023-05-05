@@ -143,8 +143,8 @@
 							<generatorName>spring</generatorName>
 							<apiPackage>org.ecommerce.prices</apiPackage>
 							<supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
-							<apiPackage>org.ecommerce.prices.application</apiPackage>
-							<modelPackage>org.ecommerce.prices.application.request</modelPackage>
+							<apiPackage>org.ecommerce.prices.infrastructure.api.rest</apiPackage>
+							<modelPackage>org.ecommerce.prices.infrastructure.api.rest.request</modelPackage>
 							<configOptions>
 								<delegatePattern>true</delegatePattern>
 							</configOptions>

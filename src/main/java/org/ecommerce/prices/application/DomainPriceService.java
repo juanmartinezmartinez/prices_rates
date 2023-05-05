@@ -1,8 +1,9 @@
-package org.ecommerce.prices.domain.service;
+package org.ecommerce.prices.application;
 
 import org.ecommerce.prices.domain.Prices;
 import org.ecommerce.prices.domain.Rate;
 import org.ecommerce.prices.domain.repository.PriceRepository;
+import org.ecommerce.prices.domain.service.PriceService;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;

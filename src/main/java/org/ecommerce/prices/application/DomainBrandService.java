@@ -1,6 +1,7 @@
-package org.ecommerce.prices.domain.service;
+package org.ecommerce.prices.application;
 
 import org.ecommerce.prices.domain.repository.BrandsRepository;
+import org.ecommerce.prices.domain.service.BrandService;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;

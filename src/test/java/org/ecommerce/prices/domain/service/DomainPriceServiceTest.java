@@ -1,5 +1,6 @@
 package org.ecommerce.prices.domain.service;
 
+import org.ecommerce.prices.application.DomainPriceService;
 import org.ecommerce.prices.domain.Prices;
 import org.ecommerce.prices.domain.Rate;
 import org.ecommerce.prices.domain.repository.PriceRepository;
